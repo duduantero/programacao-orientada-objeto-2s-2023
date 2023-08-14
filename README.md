@@ -1,1 +1,1 @@
-# programacao-orientada-objeto-2s-2023
+# Repositório dedicado a exercícios e projetos da matéria Programação Orientada a Objeto do curso de Engenharia de Software da Universidade Católica de Brasília
