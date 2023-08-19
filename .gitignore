@@ -1,6 +1,8 @@
+#ignorar pasta
+*/out
 # Compiled class file
 *.class
-/out
+
 
 # Log file
 *.log
