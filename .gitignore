@@ -1,5 +1,6 @@
 #ignorar pasta
-*/out
+*out
+*.idea
 # Compiled class file
 *.class
 
