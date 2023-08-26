@@ -26,4 +26,6 @@ public class Estoque {
         }
     return ret;
     }
+    public void removerItem (){}
+    public void atualizarQuantidade(){}
 }
