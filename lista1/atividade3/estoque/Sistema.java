@@ -50,6 +50,11 @@ public class Sistema {
 
             case 3:
                 System.out.println("\n Atualizar item do estoque\n");
+                System.out.println("Informe o ID: ");
+                int idAtt = sc.nextInt();
+                System.out.println("Informe o Quantidade: ");
+                int qtd = sc.nextInt();
+                estoque.atualizarQuantidade(idAtt,qtd);
                 break;
 
             case 4:
