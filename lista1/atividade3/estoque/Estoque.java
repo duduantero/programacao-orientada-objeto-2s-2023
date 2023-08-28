@@ -1,10 +1,11 @@
 package estoque;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Estoque {
     ArrayList<Item> itens;
-
+    Scanner scanner = new Scanner(System.in);
     Estoque(){
         this.itens = new ArrayList<Item>();
     }
@@ -14,6 +15,9 @@ public class Estoque {
 
     public  String listarItens(){
         String listarItens = "";
+        for (Item i : this.itens) {
+            listarItens += i.imprimir() + "\n";
+        }
         return  listarItens;
     }
 
@@ -26,6 +30,15 @@ public class Estoque {
         }
     return ret;
     }
-    public void removerItem (){}
+
+    public void removerItem (int id){
+         for(Item i : this.itens){
+            if(i.id == id){
+                this.itens.remove(i);
+                System.out.printf("O intem id: %d foi removido \n",id);
+                break;
+            }
+         }
+    }
     public void atualizarQuantidade(){}
 }

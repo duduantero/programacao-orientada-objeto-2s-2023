@@ -12,7 +12,7 @@ public class Item {
     }
     String imprimir(){
         String retorno;
-        retorno = this.id + "-" + this.nome + "-" + this.quantidade;
+        retorno = "ID:" + this.id + "-" + this.nome + "- Quantidade:" + this.quantidade;
         return  retorno;
     }
 }

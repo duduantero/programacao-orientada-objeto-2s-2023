@@ -7,7 +7,11 @@ public class Sistema {
     public static void main(String[] args) {
         int opcao = 0;
         Estoque estoque = new Estoque();
-        
+       Item test1 = new Item(1,"teste1",10);
+        estoque.adicionarItem(test1);
+        Item test2 = new  Item(2,"teste2",4);
+        estoque.adicionarItem(test2);
+
         
 
         Scanner scanner = new Scanner(System.in);
@@ -41,6 +45,7 @@ public class Sistema {
                 break;
             case 2:
                 System.out.println("\n Listando itens do estoque\n");
+                System.out.println(estoque.listarItens());
                 break;
 
             case 3:
@@ -49,6 +54,9 @@ public class Sistema {
 
             case 4:
                 System.out.println("Removendo item do estoque");
+                System.out.println("Informe o ID: ");
+                int idRemove = sc.nextInt();
+                estoque.removerItem(idRemove);
                 break;
         }
     }
